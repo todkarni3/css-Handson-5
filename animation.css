@@ -1,0 +1,124 @@
+body{
+    border:10px solid;
+    border-color: white green white orange;
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-image: center;
+    position: relative;
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+    font-size: 42px;
+    margin-top: 18px;
+}
+.E1{
+    background-color: orange;
+}
+.e2{
+    background-color: white;
+}
+.e3{
+    background-color: green;
+}
+
+.road{
+    background-image: url(./road\ \(1\).jpg);
+    height: 180px;
+    position:absolute;
+    width:500%;
+    bottom: 0px;
+   animation: road 3s infinite linear;
+}
+.carimg{
+    height: 220px;
+    width: 440px;
+    position: absolute;
+    bottom: 100px;
+    left: 36%;
+    animation: car 1s infinite alternate;
+}
+.city{
+    background-image: url(./city.png);
+    height:238px;
+    position: absolute;
+    width: 500%;
+    top:319px;
+    animation:  city 6s infinite linear;
+}
+.tiranga{
+    height:80px;
+    width:80px;
+    position:relative;
+    left:54%;
+    top:150px ; 
+    
+}
+
+.wheel1{
+    position: absolute;
+    bottom: 123px;
+    left: 56.5%;
+    height: 80px;
+    width: 80px;
+    animation: wheels 1s infinite linear;
+}
+
+.wheeel2{
+    position: absolute;
+    bottom: 123px;
+    left: 38.7%;
+    height: 80px;
+    width: 80px;
+    animation: wheels 1s infinite linear;
+}
+.sun{
+background-image: url(./sun.png);
+height: 90px;
+width: 90px;
+position:absolute;
+top: 85px;
+background-size: cover;
+right:0px;
+animation: sun 8s infinite linear;
+}
+
+@keyframes road{
+    100%{
+        transform: translateX(-1700px);
+    }
+}
+
+@keyframes wheels{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes city{
+    100%{
+        transform:translateX(-500px)
+    }
+}
+
+
+@keyframes sun{
+    100%{
+        transform:translateX(-490px)
+    }
+}
